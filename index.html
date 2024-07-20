@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Possibly Useful Bookmarklets
+        </title>
+    </head>
+    <body>
+        <a href='javascript:(function(){let query=prompt("Query");null!=query&&window.open(`https://www.google.com/search?q=site:${encodeURIComponent(window.location.hostname)} "${encodeURIComponent(query)}"`);}());'>Search Website</a>
+        <a href='javascript:(function(){var frame=document.createElement("iframe"),bodyHtml=document.body.innerHTML,headHtml=document.head.innerHTML;frame.addEventListener("load",(function(){var e=frame.contentWindow.document;e.body.attributes=document.body.attributes,e.head.attributes=document.head.attributes,e.head.innerHTML=headHtml,e.body.innerHTML=bodyHtml}));var widthBox=document.createElement("input");widthBox.type="number",widthBox.value=1e3,widthBox.style.width="60px",widthBox.style.height="15px",widthBox.style.fontSize="14px",widthBox.style.fontFamily="sans-serif";var xText=document.createElement("span");xText.style.fontSize="14px",xText.innerHTML=" x ",xText.style.fontFamily="sans-serif";var heightBox=document.createElement("input");function resizeFrame(){frame.width=widthBox.value,frame.height=heightBox.value}heightBox.type="number",heightBox.value=800,heightBox.style.width="60px",heightBox.style.height="15px",heightBox.style.fontSize="14px",heightBox.style.fontFamily="sans-serif",resizeFrame(),widthBox.addEventListener("change",resizeFrame),heightBox.addEventListener("change",resizeFrame),document.body.appendChild(frame),document.body.removeChild(frame),document.body.innerHTML="",document.body.appendChild(widthBox),document.body.appendChild(xText),document.body.appendChild(heightBox),document.body.appendChild(document.createElement("br")),document.body.appendChild(frame);}());'>Viewport Resizer</a>
+        <a href='javascript:(function(){var dropdowns=document.querySelectorAll(".dropdown-trigger"),iter=0;dropdowns[iter].click(),setInterval((function(){var e=document.querySelectorAll("ytd-menu-service-item-renderer tp-yt-paper-item");for(let t=0;t<e.length;t++){var r=e[t];r.innerHTML.match("Remove from")&&r.click()}iter++,dropdowns[iter].click()}),1e3);}());'>Clear YT Playlist</a>
+    </body>
+</html>
