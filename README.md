@@ -1,5 +1,3 @@
-# Migrated to [Codeberg](https://codeberg.org/TheBunnyMan123/Possibly-Useful-Bookmarklets)
-
 # Possibly-Useful-Bookmarklets
 Go to [https://thebunnyman123.github.io/Possibly-Useful-Bookmarklets](https://thebunnyman123.github.io/Possibly-Useful-Bookmarklets) to view draggable bookmarklets
 
